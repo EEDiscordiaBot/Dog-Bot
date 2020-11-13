@@ -29,7 +29,7 @@ Client:on("messageCreate", function(Message)
                     }
                 }
             }
-        else
+        elseif Message.content == "random dog" then
             Message.author:send("Sorry, I don't have permission to send a dog image in that channel.")
         end
 
