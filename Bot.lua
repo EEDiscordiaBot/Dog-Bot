@@ -17,7 +17,7 @@ Client:on("messageCreate", function(Message)
 
     if Message.channel.type == 0 or Message.channel.type == 4 then
 
-        if Message.author.bot == false and Message.content == "random dog" and Message.guild:getMember("YourBotIDHere"):hasPermission(Message.channel, "YourBotIDHere") and Message.guild:getMember("776182584135778325"):hasPermission(Message.channel, "sendMessages") then
+        if Message.author.bot == false and Message.content == "random dog" and Message.guild:getMember("YourBotIDHere"):hasPermission(Message.channel, "YourBotIDHere") and Message.guild:getMember("YourBotIDHere"):hasPermission(Message.channel, "sendMessages") then
 
             local Decider = math.random(#DogPics)
 
